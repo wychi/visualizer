@@ -1,4 +1,5 @@
 import React from 'react';
+import TwoNumberSolver from './TwoNumberSolver';
 
 export type PageDef = {
   key: string;
@@ -8,6 +9,20 @@ export type PageDef = {
 };
 
 const pages: PageDef[] = [
+  {
+    key: 'twonumbersolver',
+    label: 'Two Number Solver',
+    icon: (
+      <svg width="100" height="100" viewBox="0 0 40 40" fill="none">
+        <rect x="2" y="2" width="36" height="36" rx="8" fill="#2563eb"/>
+        <circle cx="13" cy="20" r="6" fill="#fff" stroke="#2563eb" strokeWidth="2"/>
+        <circle cx="27" cy="20" r="6" fill="#fff" stroke="#2563eb" strokeWidth="2"/>
+        <text x="13" y="24" textAnchor="middle" fontSize="10" fill="#2563eb" fontFamily="Arial">x</text>
+        <text x="27" y="24" textAnchor="middle" fontSize="10" fill="#2563eb" fontFamily="Arial">y</text>
+      </svg>
+    ),
+    render: () => <TwoNumberSolver />,
+  },
   {
     key: 'dummy1',
     label: 'Dummy Subpage 1',
